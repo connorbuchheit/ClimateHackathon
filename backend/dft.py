@@ -13,3 +13,9 @@ def compute_dft(molecule: str, basis: str = "sto-3g") -> float:
     mf.xc = 'b3lyp'  # Exchange-correlation functional
     energy = mf.kernel()
     return energy
+
+def placeholder_expensive_task(task_id):
+    result = 0
+    for i in range(10**6):  # Simulated workload
+        result += i % 7
+    return f"Task {task_id} completed with result {result}"
