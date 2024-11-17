@@ -19,7 +19,7 @@ def run_first_half():
     scf_wrapper = CheckpointSCFWrapper(mol, chkfile=f"scf_checkpoint_{molecule_name}.npz")
 
     # Perform SCF calculation up to a few cycles
-    result = scf_wrapper.kernel(max_cycle=10000)
+    result = scf_wrapper.kernel(max_cycle=5)
 
     # Print results if available
     if result and "energy" in result:

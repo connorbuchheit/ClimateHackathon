@@ -19,7 +19,7 @@ def run_second_half():
     scf_wrapper = CheckpointSCFWrapper(mol, chkfile=f"scf_checkpoint_{molecule_name}.npz")
 
     # Continue SCF calculation from checkpoint
-    result = scf_wrapper.kernel(max_cycle=100)  # Set higher max_cycle to allow convergence
+    result = scf_wrapper.kernel(max_cycle=50)  # Set higher max_cycle to allow convergence
 
     # Print results if available
     if result and "energy" in result:
