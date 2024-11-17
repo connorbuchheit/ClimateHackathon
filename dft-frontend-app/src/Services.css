@@ -1,0 +1,49 @@
+/* General Styling for Services */
+.services {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Search Bar Styling */
+  .search-bar {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Grid Container */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Grid Item (Square) */
+  .grid-item {
+    background-color: #70b179;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 120px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .grid-item:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
