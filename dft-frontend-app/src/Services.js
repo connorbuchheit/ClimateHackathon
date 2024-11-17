@@ -10,7 +10,7 @@ const Services = ({allocation, setAllocation}) => {
   // Sample service data
 
   useEffect(() => {
-    if (allocation === "high") {
+    if (allocation === "low") {
       setServices([
         { id: 1, name: "Service 1" },
         { id: 2, name: "Service 2" },
